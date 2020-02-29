@@ -9,9 +9,107 @@
     <link rel="icon" href="https://cardadfar.github.io/stuco_webdev_website/assets/files/cool-icon.png">                    <!-- Insert Icon -->
     <script src="./Starter_files/jquery.min.js"></script>
 </head>
-<body>
 
-    <p> Let's make a website with lots of teal colors! Yay :) </p>
+<body style="background-image: url('honeycomb.png');">
+
+
+    <style type="text/css">
+
+        .homePics{
+            position: relative;
+            z-index: 99;
+            float:right;
+            margin-right: 2%;
+            width: 48%;
+            height: 800px;
+            margin-top: 65px;
+
+        }
+        .blueBar{
+            position: absolute;
+            z-index: 0;
+            color: white;
+            line-height: 150px;
+            margin-top: 25%;
+            padding: -100px;
+            width: 100%;
+            color: white;
+            font-size: 300%
+
+        }
+        .lineTop{
+            position: absolute;
+            width: 100%;
+            margin-top: 2px;
+            height: 3px;
+        }
+        .lineBot{
+            position: absolute;
+            width: 100%;
+            margin-top: 43px;
+            height: 3px;
+        }
+        .gradient{
+            background-image: linear-gradient(to left, #6666ff 0%, #04F3EC 80%);
+        }
+
+        .backgroundPic{
+            width: 100%;
+        }
+
+        .topnav {
+            background-color: transparent;
+            position: absolute;
+            width: 100%;
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            color: #6666ff;
+            text-align: right;
+            padding-top: 6px;
+            padding-bottom: 10px;
+            text-decoration: none;
+            font-size: 19px;
+            float: right;
+            margin-right: 6%;
+            margin-top: 5px;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: white;
+            color: #00ffff;
+        }
+
+        /* Add a color to the active/current link */
+        .topnav a:active {
+            background-color: #6666ff;
+            opacity: 0.6;
+            color: white;
+
+        }
+
+    </style>
+
+    <div class="blueBar gradient"> &emsp;&emsp;&emsp;&emsp;Hello, I'm Natalie! </div>
+    <div class="lineTop gradient"></div>
+    <div class="lineBot gradient"></div>
+
+    <div class="homeTxt">
+        <img class="homePics" src="profile pic.jpg">
+
+    </div>
+
+    <div class="topnav">
+      <a href="/contact">Contact</a>
+      <a href="/news">Experience</a>
+      <a href="/about">About</a>
+      <a class="active" href="/home">Home</a>
+    </div>
+
+   
+
 
     <script type="text/javascript" src="./Starter_files/interactions.js"></script>    <!-- Insert JQuery Script -->
 
