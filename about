@@ -106,52 +106,16 @@
             color: #00ffff;
         }
 
-        .blurb {
-
-            margin-left: 5%;
-            margin-right: 5%;
-            padding-top: 5%;
-            display: flex;
-        }
-        .profPic {
-
-            text-align: left;
-            width: 20%;
-        }
-
-        .text {
-            margin-left: 5%;
-            text-align: center;
-            margin-top: 10%;
-        }
-
-        .inputStyle{
-            margin-top: 5%;
-            margin-left: 25%;
-            width: 60%;
-            height: 200px;
-        }
-
-        .socials {
-            margin-top: 5%;
-            columns: 20px 3;
-            margin-left: 45%;
-
-        }
-
-        .social{
-            padding-left: 5%;
-            text-align: center;
-            width: 60px;
-            height: 60px;
-
-        }
-
 
     </style>
 
+    <div class="blueBar gradient"> &emsp;&emsp;&emsp;&emsp;Hello, I'm Natalie! </div>
     <div class="lineTop gradient"></div>
     <div class="lineBot gradient"></div>
+
+    <div class="homeTxt">
+        <img class="homePics" src="profile pic.jpg">
+    </div>
 
     <div class="topnav">
       <a class="cntActive" href="https://natalie-hong.github.io/pers_web/contact">Contact</a>
@@ -159,23 +123,6 @@
       <a class="abtColor"href="https://natalie-hong.github.io/pers_web/about">About</a>
       <a class="hmColor" href="https://natalie-hong.github.io/pers_web/">Home</a>
     </div>
-
-    <div class="blurb">
-        <img class="profPic" src="profile pic.jpg">
-        <div class="text">
-            <p> Have any questions? Feel free to contact me! </p>
-        </div>
-
-    </div>
-
-    <input class="inputStyle" type="text" name="hello" placeholder="insert text here">
-
-    <div class="socials">
-        <img class="social" src="facebook.png">
-        <img class="social" src="instagram.png">
-        <img class="social" src="linkedIn.png">
-    </div>
-
 
    
 
