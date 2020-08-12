@@ -110,6 +110,7 @@
             color: #00ffff;
         }
 
+        
         .row1{
             padding-top: 5%;
             columns: 100px 3;
@@ -125,21 +126,106 @@
             margin-right: 3%;
         }
 
+        /*pictures are 85% width to height ratio*/
+
         .image {
             display: block;
             margin-left: 5%;
             margin-right: 2%;
-            height: 250px;
-            width: 400px;
+            width: 100%;
 
         }
 
-        .description {
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
 
-            padding-left: 5%;
-            padding-right: 5%;
         }
 
+        /*for the fade in effect on the text over the pictures*/
+
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: 0.8s ease;
+          margin-left: 5%;
+     
+        }
+
+        /*for the overlay colors in the 3 columns */
+
+        .leftCol{
+
+        }
+
+        .leftCol::before{
+            content:"";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            background-color: #1bd6d6;
+            opacity: 70%;
+            
+        }
+
+        .midCol{
+      
+        }
+
+        .midCol::before{
+            content:"";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            background-color: #32b9e5;
+            opacity: 70%;
+          
+        }
+
+        .rightCol{
+          
+        }
+
+        .rightCol::before{
+            content:"";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            background-color: #6376fd;
+            opacity: 70%;
+             
+        }
+
+        .container:hover .overlay {
+          opacity: 1;
+          
+        }
+        .container:hover .image{
+          webkit-filter: blur(3px); /* Chrome, Safari, Opera */
+          filter: blur(3px);
+         
+        }
+
+        .text {
+          color: white;
+          font-size: 20px;
+          position: relative;
+          text-align: center;
+         
+        }
 
     </style>
 
@@ -154,46 +240,83 @@
     </div>
 
    <div class="row1">
-        <img class="image" src="league pic.jpg">
-
-        <div class="description">
-            <p> I really like: Pellentesque at orci sed metus accumsan blandit. Pellentesque varius vulputate massa. Nulla rhoncus augue eros, sit amet tempus tortor tempus sit amet. Vestibulum pretium ullamcorper laoreet. Duis feugiat sem id porta volutpat. Etiam auctor iaculis urna. Morbi id risus finibus, tristique orci et, posuere eros. Maecenas volutpat ut diam mattis dictum. Aenean tempus sem et nunc scelerisque, non blandit lorem consectetur. In maximus orci eget mauris ullamcorper, in condimentum mi tristique. Suspendisse condimentum consequat scelerisque. 
-            </p>
-        </div>
-
-        <img class="image" src="pool.jpg">
-        <div class="description">
-            <p> I really like: Pellentesque at orci sed metus accumsan blandit. Pellentesque varius vulputate massa. Nulla rhoncus augue eros, sit amet tempus tortor tempus sit amet. Vestibulum pretium ullamcorper laoreet. Duis feugiat sem id porta volutpat. Etiam auctor iaculis urna. Morbi id risus finibus, tristique orci et, posuere eros. Maecenas volutpat ut diam mattis dictum. Aenean tempus sem et nunc scelerisque, non blandit lorem consectetur. In maximus orci eget mauris ullamcorper, in condimentum mi tristique. Suspendisse condimentum consequat scelerisque. 
-            </p>
+        <div class="container">
+            <img class="image" src="games.png">
+                <div class="overlay">
+                    <div class="leftCol">
+                    <div class="text">  
+                        <p> Lately I have been using video games as a bit of stress relief before I go to bed. Depending on the day it could be building my very teal (I love turquoise) minecraft house on the multiplayer server I share with my friends, trying to feed poros until they explode in Aram, or throwing up smokes/Sage walls and missing every Op shot possible in Valorant. It is also very plausible that I am doing a multitude of those things in one night. 
+                        </p>
+                    </div>
+                </div>
+                
+                
+                </div>
         </div>
 
         
-        <img class="image" src="journal.jpeg">
-        <div class="description">
-            <p> I really like: Pellentesque at orci sed metus accumsan blandit. Pellentesque varius vulputate massa. Nulla rhoncus augue eros, sit amet tempus tortor tempus sit amet. Vestibulum pretium ullamcorper laoreet. Duis feugiat sem id porta volutpat. Etiam auctor iaculis urna. Morbi id risus finibus, tristique orci et, posuere eros. Maecenas volutpat ut diam mattis dictum. Aenean tempus sem et nunc scelerisque, non blandit lorem consectetur. In maximus orci eget mauris ullamcorper, in condimentum mi tristique. Suspendisse condimentum consequat scelerisque. 
-            </p>
-        </div>  
+        <div class="container">
+            <img class="image" src="swimming.jpg">
+            <div class="overlay">
+                <div class="midCol">
+                    <div class="text">
+                        <p> I started competitive swimming at my local sports club in 7th grade and stuck with it through high school. Though I was sad to not continue with it at Carnegie Mellon, I tried to learn Waterpolo freshman year (totally different and much harder sport). I don't swim as often as I would like to anymore, but it is still a go to stress relief when I am having a particularly hard time. 
+                        </p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="container">
+            <img class="image" src="bulletjournal.jpg">
+            <div class="overlay">
+                <div class="rightCol">
+                    <div class="text">
+                        <p> Ever since July 2019 I (mostly) keep up with my bullet journal with a different theme every month. I have different monthly trackers (ex. exercise, water, food, sleep) and I make weekly templates where I can keep track of my everyday to do lists. It's basically my personalized artsy planner and is a nice memorial of my daily life. 
+                        </p>
+                    </div>  
+                </div>
+            </div>
+        </div>
 
    </div>
 
-   <div class="row2">
-        <img class="image" src="travel.jpg">
-        <div class="description">
-            <p> I really like: Pellentesque at orci sed metus accumsan blandit. Pellentesque varius vulputate massa. Nulla rhoncus augue eros, sit amet tempus tortor tempus sit amet. Vestibulum pretium ullamcorper laoreet. Duis feugiat sem id porta volutpat. Etiam auctor iaculis urna. Morbi id risus finibus, tristique orci et, posuere eros. Maecenas volutpat ut diam mattis dictum. Aenean tempus sem et nunc scelerisque, non blandit lorem consectetur. In maximus orci eget mauris ullamcorper, in condimentum mi tristique. Suspendisse condimentum consequat scelerisque. 
-            </p>
-        </div>  
-
-        <img class="image" src="piano.jpg">
-        <div class="description">
-            <p> I really like: Pellentesque at orci sed metus accumsan blandit. Pellentesque varius vulputate massa. Nulla rhoncus augue eros, sit amet tempus tortor tempus sit amet. Vestibulum pretium ullamcorper laoreet. Duis feugiat sem id porta volutpat. Etiam auctor iaculis urna. Morbi id risus finibus, tristique orci et, posuere eros. Maecenas volutpat ut diam mattis dictum. Aenean tempus sem et nunc scelerisque, non blandit lorem consectetur. In maximus orci eget mauris ullamcorper, in condimentum mi tristique. Suspendisse condimentum consequat scelerisque. 
-            </p>
+   <div class="row1">
+        <div class="container">
+            <img class="image" src="plane.jpg">
+             <div class="overlay">
+                <div class="leftCol">
+                    <div class="text">
+                        <p> I really like: Pellentesque at orci sed metus accumsan blandit. Pellentesque varius vulputate massa. Nulla rhoncus augue eros, sit amet tempus tortor tempus sit amet. Vestibulum pretium ullamcorper laoreet. Duis feugiat sem id porta volutpat. Etiam auctor iaculis urna. Morbi id risus finibus, tristique orci et, posuere eros. Maecenas volutpat ut diam mattis dictum. Aenean tempus sem et nunc scelerisque, non blandit lorem consectetur. In maximus orci eget mauris ullamcorper, in condimentum mi tristique. Suspendisse condimentum consequat scelerisque. 
+                        </p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <img class="image" src="piano.jpg">
+            <div class="overlay">
+                <div class="midCol">
+                    <div class="text">
+                        <p> I really like: Pellentesque at orci sed metus accumsan blandit. Pellentesque varius vulputate massa. Nulla rhoncus augue eros, sit amet tempus tortor tempus sit amet. Vestibulum pretium ullamcorper laoreet. Duis feugiat sem id porta volutpat. Etiam auctor iaculis urna. Morbi id risus finibus, tristique orci et, posuere eros. Maecenas volutpat ut diam mattis dictum. Aenean tempus sem et nunc scelerisque, non blandit lorem consectetur. In maximus orci eget mauris ullamcorper, in condimentum mi tristique. Suspendisse condimentum consequat scelerisque. 
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <img class="image" src="minecraft.jpg">
-        <div class="description">
-            <p> I really like: Pellentesque at orci sed metus accumsan blandit. Pellentesque varius vulputate massa. Nulla rhoncus augue eros, sit amet tempus tortor tempus sit amet. Vestibulum pretium ullamcorper laoreet. Duis feugiat sem id porta volutpat. Etiam auctor iaculis urna. Morbi id risus finibus, tristique orci et, posuere eros. Maecenas volutpat ut diam mattis dictum. Aenean tempus sem et nunc scelerisque, non blandit lorem consectetur. In maximus orci eget mauris ullamcorper, in condimentum mi tristique. Suspendisse condimentum consequat scelerisque. 
-            </p>
+        <div class="container">
+            <img class="image" src="KPDC.png">
+            <div class="overlay">
+                <div class="rightCol">
+                    <div class="text">
+                        <p> I really like: Pellentesque at orci sed metus accumsan blandit. Pellentesque varius vulputate massa. Nulla rhoncus augue eros, sit amet tempus tortor tempus sit amet. Vestibulum pretium ullamcorper laoreet. Duis feugiat sem id porta volutpat. Etiam auctor iaculis urna. Morbi id risus finibus, tristique orci et, posuere eros. Maecenas volutpat ut diam mattis dictum. Aenean tempus sem et nunc scelerisque, non blandit lorem consectetur. In maximus orci eget mauris ullamcorper, in condimentum mi tristique. Suspendisse condimentum consequat scelerisque. 
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
+
 
    </div>
 
