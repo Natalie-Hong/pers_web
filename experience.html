@@ -37,18 +37,20 @@
             font-size: 300%
 
         }
-        .lineTop{
-            position: absolute;
+        .lines-container {
+            top:0;
+            left:0;
+            right:0;
             width: 100%;
-            margin-top: 2px;
-            height: 3px;
+           
         }
-        .lineBot{
-            position: absolute;
+
+        .lines {
             width: 100%;
-            margin-top: 43px;
+            float: left;
             height: 3px;
-        }
+            
+        }  
         .gradient{
             background-image: linear-gradient(to left, #6666ff 0%, #04F3EC 80%);
         }
@@ -59,7 +61,7 @@
 
         .topnav {
             background-color: transparent;
-            position: absolute;
+            position: relative;
             width: 100%;
         }
 
@@ -70,20 +72,21 @@
             padding-top: 6px;
             padding-bottom: 10px;
             text-decoration: none;
-            font-size: 19px;
+            font-size: 1.3vw;
             float: right;
             padding-right: 20px;
             padding-left: 20px;
-            margin-top: 5px;
+            margin-top: 0;
             margin-right: 2%;
+        
         }
+
 
         /* Add a color to the active/current link */
         .expActive {
             background-color: #6089FC;
             /*opacity: 0.9;*/
             color: white;
-            
 
         }
 
@@ -110,11 +113,10 @@
         }
 
         .textPic{
-
-            margin-left: 5%;
-            margin-right: 5%;
-            padding-top: 5%;
+            float: left;
+            margin-top: 2%;
             display: flex;
+            
 
         }
 
@@ -123,6 +125,7 @@
             text-align: right;
             position: relative;
             width: 40%;
+            
 
         }
 
@@ -131,6 +134,7 @@
             text-align: left;
             position: relative;
             width: 40%;
+            
 
         }
 
@@ -183,26 +187,25 @@
 
     </style>
 
-    <div class="lineTop gradient"></div>
-    <div class="lineBot gradient"></div>
+    <div class="lines-container">
+          <div class="lines gradient"/>
+          </div>
 
+            <div class="topnav">
+              <a class="cntColor" href="https://natalie-hong.github.io/pers_web/contact">Contact</a>
+              <a class="expActive"href="https://natalie-hong.github.io/pers_web/experience">Experience</a>
+              <a class="abtColor"href="https://natalie-hong.github.io/pers_web/about">About</a>
+              <a class="hmColor" href="https://natalie-hong.github.io/pers_web/">Home</a>
+            </div>
 
-    <div class="topnav">
-      <a class="cntColor" href="https://natalie-hong.github.io/pers_web/contact">Contact</a>
-      <a class="expActive"href="https://natalie-hong.github.io/pers_web/experience">Experience</a>
-      <a class="abtColor"href="https://natalie-hong.github.io/pers_web/about">About</a>
-      <a class="hmColor" href="https://natalie-hong.github.io/pers_web/">Home</a>
-    </div>
-
-    <div class= "textPic">
+          <div class="lines gradient"/>
+          </div>
+    <div class="textPic">
         <div class="text1">
             <p>Here's some background about me: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus purus ac sem dapibus commodo. Phasellus a diam lobortis, vestibulum arcu aliquet, molestie leo. Quisque sem lectus, tristique sed condimentum sit amet, consequat sed leo. Curabitur elit velit, dictum ut ullamcorper vitae, sodales at libero. Nam faucibus, lectus quis hendrerit sagittis, diam nunc sodales lacus, vel hendrerit arcu turpis ut neque. Fusce tellus nulla, vestibulum quis volutpat euismod, semper sit amet orci. Vestibulum interdum eros sit amet sapien tincidunt luctus.</p>
         </div>
         <img class="rightPic" src="project img.jpeg">
-
-        
     </div>
-
 
     <div class= "textPic">
         <img class="leftPic" src="project img.jpeg">
@@ -233,6 +236,7 @@
         </div>
         <img class="rightPic" src="project img.jpeg">
     </div>
+</div>
 
    
 
