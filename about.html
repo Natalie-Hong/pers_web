@@ -37,18 +37,19 @@
             font-size: 300%
 
         }
-        .lineTop{
-            position: absolute;
+        .lines-container {
+            top:0;
+            left:0;
+            right:0;
             width: 100%;
-            margin-top: 2px;
-            height: 3px;
         }
-        .lineBot{
-            position: absolute;
+
+        .lines {
             width: 100%;
-            margin-top: 43px;
+            float: left;
             height: 3px;
-        }
+            
+        }  
         .gradient{
             background-image: linear-gradient(to left, #6666ff 0%, #04F3EC 80%);
         }
@@ -59,7 +60,7 @@
 
         .topnav {
             background-color: transparent;
-            position: absolute;
+            position: relative;
             width: 100%;
         }
 
@@ -70,11 +71,11 @@
             padding-top: 6px;
             padding-bottom: 10px;
             text-decoration: none;
-            font-size: 19px;
+            font-size: 1.3vw;
             float: right;
             padding-right: 20px;
             padding-left: 20px;
-            margin-top: 5px;
+            margin-top: 0;
             margin-right: 2%;
         
         }
@@ -111,14 +112,17 @@
         }
 
         .row1{
-            padding-top: 5%;
+            /*padding-top: 10%;
             columns: 100px 3;
             margin-left: 3%;
-            margin-right: 3%;
+            margin-right: 3%;*/
+            float: left;
+            columns: 100px 3;
+            margin-top: 2%;
+
         }
 
         .row2{
-
             padding-top: 1%;
             columns: 100px 3;
             margin-left: 3%;
@@ -245,7 +249,7 @@
 
         .text {
           color: white;
-          font-size: 20px;
+          font-size: 1.65vw;
           position: absolute;
           text-align: center;
           top: 50%;
@@ -255,22 +259,27 @@
 
     </style>
 
-    <div class="lineTop gradient"></div>
-    <div class="lineBot gradient"></div>
+    <div class="lines-container">
+      <div class="lines gradient"/>
+      </div>
 
-    <div class="topnav">
-      <a class="cntColor" href="https://natalie-hong.github.io/pers_web/contact">Contact</a>
-      <a class="expColor"href="https://natalie-hong.github.io/pers_web/experience">Experience</a>
-      <a class="abtActive"href="https://natalie-hong.github.io/pers_web/about">About</a>
-      <a class="hmColor" href="https://natalie-hong.github.io/pers_web/">Home</a>
-    </div>
+        <div class="topnav">
+          <a class="cntColor" href="https://natalie-hong.github.io/pers_web/contact">Contact</a>
+          <a class="expColor" href="https://natalie-hong.github.io/pers_web/experience">Experience</a>
+          <a class="abtActive" href="https://natalie-hong.github.io/pers_web/about">About</a>
+          <a class="hmColor" href="https://natalie-hong.github.io/pers_web/">Home</a>
+        </div>
+
+      <div class="lines gradient"/>
+      </div>
+    
 
    <div class="row1">
          <div class="container">
             <img class="image" src="swimming.jpg">
             <div class="overlay">
-                <div class="midCol">
-                    <center> <div class="text">
+                <div class="leftCol">
+                    <div class="text">
                         <p> I started competitive swimming at my local sports club in 7th grade and stuck with it through high school. Though I was sad to not continue with it at Carnegie Mellon, I tried to learn Waterpolo freshman year (totally different and much harder sport). I don't swim as often as I would like to anymore, but it is still a go to stress relief when I am having a particularly hard time. 
                         </p>
                     </div>
@@ -281,7 +290,7 @@
         <div class="container">
             <img class="image" src="piano.jpg">
             <div class="overlay">
-                <div class="rightCol">
+                <div class="midCol">
                     <div class="text">
                         <p> Piano music has been my companion since I could walk, over the years there was a lot of pleasure and a lot of tears. There are few songs I can remember from heart, but almost no song I cannot learn. The piano is the one I go to for complete catharsis. 
                         </p>
@@ -292,7 +301,7 @@
         <div class="container">
             <img class="image" src="puzzlehunt.png">
             <div class="overlay">
-                <div class="midCol">
+                <div class="rightCol">
                     <div class="text">
                         <p> There always seems to be a puzzhunt around the corner, whether it's hosted by a company or a university my friends and I carve out time (totally not procrastinating on our assignments) to participate. Though we actually win very few puzzlehunts we are invariably up for the challenge.
                         </p>
@@ -300,18 +309,15 @@
                 </div>
             </div>
         </div>
-        
-    
     </div>
 
-
-   <div class="row2">
+   <div class="row1">
          
         
          <div class="container">
             <img class="image" src="dance.png">
             <div class="overlay">
-                <div class="rightCol">
+                <div class="leftCol">
                     <div class="text">
                         <p> I have recently started participating in Carnegie Mellon's Kpop dance club, and also learning pop dances with my friends. I danced ballet and tap before high school but am getting into more modern styles of dancing for fun.  
                         </p>
@@ -336,19 +342,16 @@
             <div class="overlay">
                 <div class="rightCol">
                     <div class="text">
-                        <p> Ever since July 2019 I (mostly) keep up with my bullet journal with a different theme every month. I have different monthly trackers (ex. exercise, water, food, sleep) and I make weekly templates where I can keep track of my everyday to do lists. It's basically my personalized, artsy planner and is a nice track record of my daily life.</p>
+                        <p> Ever since July 2019 I (mostly) keep up with my bullet journal with a different theme every month. I have different monthly trackers (ex. exercise, water, food, sleep) and I make weekly templates where I can keep track of my everyday to do lists. It's basically my personalized, artsy planner.</p>
                     </div>  
                 </div>
             </div>
         </div> 
        
-        
-
-
    </div>
 
 
-   <div class="row2">
+   <div class="row1">
          <div class="container">
             <img class="image" src="games.png">
                 <div class="overlay">
@@ -363,9 +366,9 @@
         <div class="container">
             <img class="image" src="plane.jpg">
              <div class="overlay">
-                <div class="leftCol">
+                <div class="midCol">
                     <div class="text">
-                        <p> Traveling with my family is always the most exciting way to spend any vacation. Despite us always only ever arriving at the last second, I never fail to plan out where and when we are going on each day of the vacation, making sure we can experience and see as much as we can in the little time we have. I love taking artsy photos and it's always a blast!
+                        <p> Traveling with my family is always the most exciting way to spend any vacation. Despite us always only ever arriving at the last second, I never fail to plan out where and when we are going on each day of the vacation, making sure we can experience and see as much as we can in the little time we have. I also love taking photos! 
                         </p>
                     </div>  
                 </div>
@@ -374,7 +377,7 @@
         <div class="container">
             <img class="image" src="wattpad.png">
              <div class="overlay">
-                <div class="leftCol">
+                <div class="rightCol">
                     <div class="text">
                         <p> Wattpad is a social media site for readers and writers. I found it in 7th grade and made a piece of it my home, posting and updating around 10 works of fanfiction on the platform where tens of thousands of people read, comment and like my stories. Though I have not been active on the site for years, I am hoping to continue reading and writing sometime soon. 
                         </p>
@@ -387,6 +390,7 @@
 
 
    </div>
+</div>
 
 
     <script type="text/javascript" src="./Starter_files/interactions.js"></script>    <!-- Insert JQuery Script -->
