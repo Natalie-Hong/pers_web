@@ -115,8 +115,7 @@
         .textPic{
             float: left;
             margin-top: 2%;
-            display: flex;
-            
+            display: flex;     
 
         }
 
@@ -137,15 +136,59 @@
             
 
         }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border: 3px solid green;
+
+        }
+
+        /*for the fade in effect on the text over the pictures*/
+
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: 0.8s ease;
+          margin-left: 5%;
+        
+        }
+        .container:hover .overlay {
+          opacity: 1;
+          
+        }
+
+        .textCover{
+            position: absolute;
+            top: 0; left: 0;
+            height: 50%;
+            width: 100%;
+            color: grey;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-25%);
+            font-size: 4vw;
+            border: 3px solid red;
+
+        }
 
 
         .text1 {
+            position: relative;
 
             width: 70%;
-            color: #00ccff;
-            padding-right: 5%;
-            text-align: center;
-            padding-top: 5%;
+            color: grey;
+            padding-right: 2%;
+            text-align: left;
+            padding-top: 2%;
+            padding-left: 1%;
+            border: 3px solid orange;
         }
 
         .text2 {
@@ -180,7 +223,7 @@
             width: 70%;
             color: #00ccff;
             padding-right: 5%;
-            text-align: center;
+            text-align: left;
             padding-top: 5%;
         }
 
@@ -190,7 +233,6 @@
     <div class="lines-container">
           <div class="lines gradient"/>
           </div>
-
             <div class="topnav">
               <a class="cntColor" href="https://natalie-hong.github.io/pers_web/contact">Contact</a>
               <a class="expActive"href="https://natalie-hong.github.io/pers_web/experience">Experience</a>
@@ -201,10 +243,17 @@
           <div class="lines gradient"/>
           </div>
     <div class="textPic">
+
         <div class="text1">
-            <p>Here's some background about me: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus purus ac sem dapibus commodo. Phasellus a diam lobortis, vestibulum arcu aliquet, molestie leo. Quisque sem lectus, tristique sed condimentum sit amet, consequat sed leo. Curabitur elit velit, dictum ut ullamcorper vitae, sodales at libero. Nam faucibus, lectus quis hendrerit sagittis, diam nunc sodales lacus, vel hendrerit arcu turpis ut neque. Fusce tellus nulla, vestibulum quis volutpat euismod, semper sit amet orci. Vestibulum interdum eros sit amet sapien tincidunt luctus.</p>
+            <p><a href="https://www.auditiontech.com/">Audition Technology</a> is a start up focused on hearing health devices and applications. I worked as an Android App Development Intern for their app focused on keeping users informed about how much sound they are exposed to daily, so they can be aware of their potential risks for hearing loss. 
+            <br><br>I implemented the audio streaming exposure feature, where the user can get an estimated volume of the media they are currently streaming if they are using earbuds, headphones, etc. Also, I worked to improve an already established ambient exposure feature, where the app uses the phone microphone to measure the volume of the user's environment. Specifically I added the ability for the user to take a 5 second measurement of their ambient noise, then use a slider to input how many hours they will be in the current location, so the app can have estimates of their daily exposure without them having to keep the app running 24/7 and draining their battery. Along with the manual measurment, I added the automatic measurement feature, where the user can have the app run indefinately in the background and it will automatically take a 5 second sample every hour, so the user does not have to remember to manually tell the app to take an ambient exposure sample. Lastly, the app also has an exposure graph displaying the user's daily cumulative exposure in a line graph. I worked on adding a gradient fill to the exposure graph with the lower parts starting at a green color, then depening on the how close the user is close to hitting their daily recommended sound exposure threshold, the graph will turn yellow, and eventually red.</p>
+
+            <div class="textCover">
+                Android App Development Intern 
+                <br> Summer 2020
+            </div>
         </div>
-        <img class="rightPic" src="project img.jpeg">
+        <img class="rightPic" src="audition technology.png">
     </div>
 
     <div class= "textPic">
@@ -215,7 +264,7 @@
     </div>
 
     <div class= "textPic">
-        <div class="text3">
+        <div class="text1">
             <p>Describe the project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus purus ac sem dapibus commodo. Phasellus a diam lobortis, vestibulum arcu aliquet, molestie leo. Quisque sem lectus, tristique sed condimentum sit amet, consequat sed leo. Curabitur elit velit, dictum ut ullamcorper vitae, sodales at libero. Nam faucibus, lectus quis hendrerit sagittis, diam nunc sodales lacus, vel hendrerit arcu turpis ut neque. Fusce tellus nulla, vestibulum quis volutpat euismod, semper sit amet orci. Vestibulum interdum eros sit amet sapien tincidunt luctus.</p>
         </div>
         <img class="rightPic" src="project img.jpeg">
@@ -224,14 +273,14 @@
 
     <div class= "textPic">
         <img class="leftPic" src="project img.jpeg">
-        <div class="text4">
+        <div class="text2">
             <p>Describe the project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus purus ac sem dapibus commodo. Phasellus a diam lobortis, vestibulum arcu aliquet, molestie leo. Quisque sem lectus, tristique sed condimentum sit amet, consequat sed leo. Curabitur elit velit, dictum ut ullamcorper vitae, sodales at libero. Nam faucibus, lectus quis hendrerit sagittis, diam nunc sodales lacus, vel hendrerit arcu turpis ut neque. Fusce tellus nulla, vestibulum quis volutpat euismod, semper sit amet orci. Vestibulum interdum eros sit amet sapien tincidunt luctus.</p>
          </div>
         
     </div>
 
     <div class= "textPic">
-        <div class="text5">
+        <div class="text1">
             <p>Describe the project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus purus ac sem dapibus commodo. Phasellus a diam lobortis, vestibulum arcu aliquet, molestie leo. Quisque sem lectus, tristique sed condimentum sit amet, consequat sed leo. Curabitur elit velit, dictum ut ullamcorper vitae, sodales at libero. Nam faucibus, lectus quis hendrerit sagittis, diam nunc sodales lacus, vel hendrerit arcu turpis ut neque. Fusce tellus nulla, vestibulum quis volutpat euismod, semper sit amet orci. Vestibulum interdum eros sit amet sapien tincidunt luctus.</p>
         </div>
         <img class="rightPic" src="project img.jpeg">
