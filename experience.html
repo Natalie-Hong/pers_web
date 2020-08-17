@@ -71,7 +71,6 @@
         
         }
 
-
         /* Add a color to the active/current link */
         .expActive {
             background-color: #6089FC;
@@ -113,9 +112,8 @@
             float: right;
             height: 50%;
             overflow: hidden;
-            border: 3px solid blue;
-
         }
+
         .textLeft {
             width: 70%;
             height: 10%;
@@ -127,125 +125,96 @@
             float: left;
             height: 50%;
             overflow: hidden;
-            border: 3px solid blue;
+           
 
         }
         .picture1{
-            margin-top: -4px;
+            margin-top: -3.5px;
             width: 100%;
-            height: 101%;
-            /*border: 3px solid red;*/
+            height: 101%; 
         }
 
         .textPic{
             float: left;
-            margin-top: 2%;
+            margin-top: 1%;
             display: flex;
-            border: 3px solid purple;
-
-        }
-
-        .rightPic { 
-            z-index: 99;
-            text-align: right;
-            position: relative;
-            width: 40%;
+            margin-bottom: 0.7%;
         }
 
         .picture{
             width: 100%;
             height: 19.75vw;
-            transform: translate3d(0px, 0px, 0px);
+            transform: translate3d(0px, -100%, 0px);
             transition: transform .5s ease-in-out;
             float: left;
-            /*border: 3px solid orange;*/
-
-        }
-
-        .picture:hover{
-            transform: translate3d(0px, -100%, 0px);
-        }
-        .leftPic {
-            z-index: 99;
-            text-align: left;
-            position: relative;
-            width: 40%;
-            
-
-        }
-        .textCover1:hover{
-            transform: translate3d(0px, -100%, 0px);
-        }
-
-        /*for the fade in effect on the text over the pictures*/
-
-        .slide {
-            float: top;
-            margin: 0;
-            padding: 0;
-        }
-
+        } 
 
         .textCover1{
             height: 19.25vw;
             transform: translate3d(0px, 0px, 0px);
             transition: transform .5s ease-in-out;
+            border: 3.5px solid;
+            border-image: linear-gradient(80deg, #04F3EC, #88afe0) 1;
         }
 
-        .title1{
-            color: black;
+        .textCover2{
+            height: 19.25vw;
+            transform: translate3d(0px, 0px, 0px);
+            transition: transform .5s ease-in-out;
+            border: 3.5px solid;
+            border-image: linear-gradient(80deg, #0082cb, #6666ff) 1;
+        }
+
+        .textCover3{
+            height: 19.25vw;
+            transform: translate3d(0px, 0px, 0px);
+            transition: transform .5s ease-in-out;
+            border: 3.5px solid;
+            border-image: linear-gradient(80deg, #04F3EC, #000000) 1;
+        }
+
+        .textCover4{
+            height: 19.25vw;
+            transform: translate3d(0px, 0px, 0px);
+            transition: transform .5s ease-in-out;
+            border: 3.5px solid;
+            border-image: linear-gradient(80deg, #2b578d, #6666ff) 1;
+        }
+        .textCover5{
+            height: 19.25vw;
+            transform: translate3d(0px, 0px, 0px);
+            transition: transform .5s ease-in-out;
+            border: 3.5px solid;
+            border-image: linear-gradient(80deg, #04F3EC, #2b578d) 1;
+        }
+
+        .textCover6{
+            height: 19.25vw;
+            transform: translate3d(0px, 0px, 0px);
+            transition: transform .5s ease-in-out;
+            border: 3.5px solid;
+            border-image: linear-gradient(80deg, #000000, #6666ff) 1;
+        }
+        
+        .title{
+            color: #4e4848cf;
             text-align: center;
             font-size: 3vw;
             padding-top: 9%;
-            padding-bottom: 8%;
+            padding-bottom: 10.25%;
+
         }
 
-        .text1 {
+        .text {
             height: 100%;
             color: black;
             text-align: left;
-            border: 3px solid orange;
-            font-size: 1.2vw;
-            
+            padding-left: 1%;
+            padding-right: 1%;
+            padding-top: 1.2%;
+            transform: translateY(-3%);
         }
-
-        .text2 {
-  
-            width: 80%;
-            padding-left: 5%;
-            text-align: center;
-            color: #00ccff;
-            padding-top: 5%;
-        }
-
-        .text3 {
-
-            width: 70%;
-            color: #00ccff;
-            padding-right: 5%;
-            text-align: center;
-            padding-top: 5%;
-        }
-
-        .text4 {
-
-            width: 80%;
-            padding-left: 5%;
-            text-align: center;
-            color: #00ccff;
-            padding-top: 5%;
-        }
-
-        .text5 {
-
-            width: 70%;
-            color: #00ccff;
-            padding-right: 5%;
-            text-align: left;
-            padding-top: 5%;
-        }
-
-
+        
     </style>
 
     <div class="lines-container">
@@ -263,112 +232,270 @@
 
     <div class="textPic">
         <div class="textRight">
-            <div class="textCover1" id="hoverid1">
-            <div class="title1">
-                    
-                Android App Development Intern 
-                <br> Summer 2020
-                   
+            <div class="textCover1" id="hoverid1">  
+                    <div class="title" style="color:#7499c7">
+                       
+                        Android App Development Intern 
+                        <br> Summer 2020
+                           
+                    </div>
+                <div class="text" style="background-color:#00ffa161; font-size:1.157vw;" >
+                    <p top="0" >&emsp;<a href="https://www.auditiontech.com/">Audition Technology</a> is a start up focused on hearing health devices and applications. I worked as an Android App Development Intern for their app focused on keeping users informed about how much sound they are exposed to daily, so they can be aware of their potential risks for hearing loss. 
+                    <br>&emsp; I implemented the audio streaming exposure feature, where the user can get an estimated volume of the media they are currently streaming if they are using earbuds, headphones, etc. Also, I worked to improve an already established ambient exposure feature, where the app uses the phone microphone to measure the volume of the user's environment. Specifically I added the ability for the user to take a 5 second measurement of their ambient noise, then use a slider to input how many hours they will be in the current location, so the app can have estimates of their daily exposure without them having to keep the app running 24/7 and draining their battery. Along with the manual measurment, I added the automatic measurement feature, where the user can have the app run indefinately in the background and it will automatically take a 5 second sample every hour, so the user does not have to remember to manually tell the app to take an ambient exposure sample. Lastly, the app also has an exposure graph displaying the user's daily cumulative exposure in a line graph. I worked on adding a gradient fill to the exposure graph with the lower parts starting at a green color, then depening on the how close the user is close to hitting their daily recommended sound exposure threshold, the graph will turn yellow, and eventually red.</p>
+                </div>
             </div>
-            <div class="text1">
-             
-            <p>&emsp;<a href="https://www.auditiontech.com/"> Audition Technology</a> is a start up focused on hearing health devices and applications. I worked as an Android App Development Intern for their app focused on keeping users informed about how much sound they are exposed to daily, so they can be aware of their potential risks for hearing loss. 
-            <br><br> &emsp; I implemented the audio streaming exposure feature, where the user can get an estimated volume of the media they are currently streaming if they are using earbuds, headphones, etc. Also, I worked to improve an already established ambient exposure feature, where the app uses the phone microphone to measure the volume of the user's environment. Specifically I added the ability for the user to take a 5 second measurement of their ambient noise, then use a slider to input how many hours they will be in the current location, so the app can have estimates of their daily exposure without them having to keep the app running 24/7 and draining their battery. Along with the manual measurment, I added the automatic measurement feature, where the user can have the app run indefinately in the background and it will automatically take a 5 second sample every hour, so the user does not have to remember to manually tell the app to take an ambient exposure sample. Lastly, the app also has an exposure graph displaying the user's daily cumulative exposure in a line graph. I worked on adding a gradient fill to the exposure graph with the lower parts starting at a green color, then depening on the how close the user is close to hitting their daily recommended sound exposure threshold, the graph will turn yellow, and eventually red.</p>
-            </div>
-
-        </div>
         </div>
         <div class="imgRight">
             <div class="picture" id="pictureid1">
-            <img class="picture1" src="audition-tech.png">
-            <img class="picture1" src="android.png">
+                <img class="picture1" src="pics/android.png">
+                <img class="picture1" src="pics/audition-tech.png">
             </div>
 
         </div>
             
-        </div>
     </div>
 
-      <div class="textPic">
+    <div class="textPic">
         <div class="imgLeft">
-            <div class="picture" id="pictureid1">
-            <img class="picture1" src="audition-tech.png">
-            <img class="picture1" src="android.png">
+            <div class="picture" id="pictureid2">
+            <img class="picture1" src="pics/bizagi.png">
+            <img class="picture1" src="pics/webster.png">
             </div>
 
         </div>
         <div class="textLeft">
-            <div class="textCover1" id="hoverid2">
-            <div class="title1">
-                    
-                IT Software Engineering Intern
-                <br> Summer 2020
-                   
+            <div class="textCover2" id="hoverid2">
+                <div class="title" style="color:#0082cb">
+                        
+                    IT Software Development Intern
+                    <br> Summer 2020
+                       
+                </div>
+                <div class="text" style="font-size: 1.3vw; background-color: #ffa50096;">
+                    <p>&emsp; I interned at <a href="https://public.websteronline.com/">Webster Bank</a>, a regional bank based in Conneticut that has branches mostly in the east coast. For my first project I worked with the Salesforce team at Webster to make a few process diagrams of Webster's nightly repository data uploads to the Salesforce cloud. 
+                    <br>&emsp;The second and larger project I had the chance to participate in was their ongoing effort to create an automated Business Process Model system. Business proposals have to go through many rounds of consideration and have to be vetted by multiple teams at the company, this can take a long time as people have to be informed of the requirements for the project and lots of documents have to be set up and checked, and all the communication is manual. I worked to help streamline this process with the use of <a href="https://bizagi.com/"> Bizagi,</a> a platform that makes automating processes easier. I worked to draft the business process model with bizagi's modeling system, then considered different use cases for the automation complete with drafting up automated email templates and display screens. I also learned about data modeling in Bizagi and discussed test cases for each step in the process.</p>
+                </div>
             </div>
-            <div class="text1">
-             
-            <p>&emsp;<a href="https://www.auditiontech.com/"> Audition Technology</a> is a start up focused on hearing health devices and applications. I worked as an Android App Development Intern for their app focused on keeping users informed about how much sound they are exposed to daily, so they can be aware of their potential risks for hearing loss. 
-            <br><br> &emsp; I implemented the audio streaming exposure feature, where the user can get an estimated volume of the media they are currently streaming if they are using earbuds, headphones, etc. Also, I worked to improve an already established ambient exposure feature, where the app uses the phone microphone to measure the volume of the user's environment. Specifically I added the ability for the user to take a 5 second measurement of their ambient noise, then use a slider to input how many hours they will be in the current location, so the app can have estimates of their daily exposure without them having to keep the app running 24/7 and draining their battery. Along with the manual measurment, I added the automatic measurement feature, where the user can have the app run indefinately in the background and it will automatically take a 5 second sample every hour, so the user does not have to remember to manually tell the app to take an ambient exposure sample. Lastly, the app also has an exposure graph displaying the user's daily cumulative exposure in a line graph. I worked on adding a gradient fill to the exposure graph with the lower parts starting at a green color, then depening on the how close the user is close to hitting their daily recommended sound exposure threshold, the graph will turn yellow, and eventually red.</p>
+        </div>
+    </div>
+
+    <div class="textPic">
+        <div class="textRight">
+            <div class="textCover3" id="hoverid3">
+                <div class="title" style="color:#ee2238">
+                        
+                    EventPal (Hackathon Project) 
+                    <br> February 2020
+                       
+                </div>
+                <div class="text" style="font-size: 2vw; background-color: #54acf685;">
+                    <p>&emsp;<a href="https://devpost.com/software/event-pal">EventPal</a> is a social platform my friends and I built for a hackathon. Neither me nor my other friend who worked on frontend had any frontend experience, so we bootstrapped our site within the 24 hours they gave us. It was a fun and engaging learning experience, wireframing with our teammates and then implementing based off of YouTube tutorials. Plus we not only learned about bootstrapping elements for the front end, but also a little bit about integrating front end and back end together. Our outcome was simple but I gained a lot just through the project itself.</p>
+                </div>
+            </div>
+        </div>
+        <div class="imgRight">
+            <div class="picture" id="pictureid3">
+                <img class="picture1" src="pics/eventpal.png">
+                <img class="picture1" src="pics/tartanhacks.png">
             </div>
 
         </div>
-        </div>
-
             
-        </div>
     </div>
-    <div class= "textPic">
-        <img class="leftPic" src="project img.jpeg">
-        <div class="text2">
-            <p> Describe the project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus purus ac sem dapibus commodo. Phasellus a diam lobortis, vestibulum arcu aliquet, molestie leo. Quisque sem lectus, tristique sed condimentum sit amet, consequat sed leo. Curabitur elit velit, dictum ut ullamcorper vitae, sodales at libero. Nam faucibus, lectus quis hendrerit sagittis, diam nunc sodales lacus, vel hendrerit arcu turpis ut neque. Fusce tellus nulla, vestibulum quis volutpat euismod, semper sit amet orci. Vestibulum interdum eros sit amet sapien tincidunt luctus.</p>
+    
+    <div class="textPic">
+        <div class="imgLeft">
+            <div class="picture" id="pictureid4">
+            <img class="picture1" src="pics/daedalus.png">
+            <img class="picture1" src="pics/15112.png">
+            </div>
+
+        </div>
+        <div class="textLeft">
+            <div class="textCover4" id="hoverid4">
+                <div class="title" style="color:#2b578d">
+                        
+                    Daedalus's Creation (Class Project)
+                    <br> December 2018
+                       
+                </div>
+                <div class="text" style="font-size: 1.5vw; background-color: #ff470066;">
+                    <p>&emsp; <a href="https://www.youtube.com/watch?v=F_BL0YVZSyg">Daedalus's Creation</a> is a 3D first person pov maze game. I made this game for the 15-112 Fundamentals of Programming class, using Panda3D - an outdated 3D rendering platform - choosing 3D Panda since the requirement was that the project has to be in Python, the language we learned in class. I wanted to try out a platform I had never used before, and decided to make a game based off of the greek myth of the Minotaur. The player is put into a randomly generated maze, and is trying to save people inside maze from the Minotaur. Once the player finds and kills the Minotaur a golden rope appears, leading them out of the maze. The largest struggle I had while creating this game was the fact that bug fixing was much harder than usual, since no one uses Panda3D there were very few answers to be found in online forums and documentation. I also had to integrate textures with different rendering platforms which I had no experience with.</p> 
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class= "textPic">
-        <div class="text1">
-            <p>Describe the project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus purus ac sem dapibus commodo. Phasellus a diam lobortis, vestibulum arcu aliquet, molestie leo. Quisque sem lectus, tristique sed condimentum sit amet, consequat sed leo. Curabitur elit velit, dictum ut ullamcorper vitae, sodales at libero. Nam faucibus, lectus quis hendrerit sagittis, diam nunc sodales lacus, vel hendrerit arcu turpis ut neque. Fusce tellus nulla, vestibulum quis volutpat euismod, semper sit amet orci. Vestibulum interdum eros sit amet sapien tincidunt luctus.</p>
+    <div class="textPic">
+        <div class="textRight">
+            <div class="textCover5" id="hoverid5">
+                <div class="title" style="color:#2b578d">
+                        
+                    Manus Defense (Hackathon Project) 
+                    <br> December 2018
+                       
+                </div>
+                <div class="text" style="font-size: 1.527vw; background-color: #c79f8a38;">
+                    <p>&emsp;<a href="https://www.youtube.com/watch?v=kfTWK7rIEC4&feature=share">Manus Defense</a> was a project my friends and I made for our 15-112 class hackathon. We had 24 hours and decided that we wanted to somehow incorporate a piece of hardware into our project, so we picked up a hand and wrist position sensor, <a href="https://www.ultraleap.com/product/leap-motion-controller">Leap Motion</a>. The game is simple, protect the star in the middle of the screen from red asteroids trying to hit it by rotating the semi circle shields around the star with your hand. Our team of four brainstormed together then each worked on our own parts of the game, making sure our individual classes could be put together soundly via differing attributes. I worked on the star and shield classes, while my teammates developed the asteroid class, integrated data from the Leap Motion device, and added music and sound effects. We constantly discussed our progress and design along the way to make sure everything would work as one unit.</p>
+                </div>
+            </div>
         </div>
-        <img class="rightPic" src="project img.jpeg">
-    </div>
+        <div class="imgRight">
+            <div class="picture" id="pictureid5">
+                <img class="picture1" src="pics/manus defense.png">
+                <img class="picture1" src="pics/hack112.png">
+            </div>
 
-
-    <div class= "textPic">
-        <img class="leftPic" src="project img.jpeg">
-        <div class="text2">
-            <p>Describe the project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus purus ac sem dapibus commodo. Phasellus a diam lobortis, vestibulum arcu aliquet, molestie leo. Quisque sem lectus, tristique sed condimentum sit amet, consequat sed leo. Curabitur elit velit, dictum ut ullamcorper vitae, sodales at libero. Nam faucibus, lectus quis hendrerit sagittis, diam nunc sodales lacus, vel hendrerit arcu turpis ut neque. Fusce tellus nulla, vestibulum quis volutpat euismod, semper sit amet orci. Vestibulum interdum eros sit amet sapien tincidunt luctus.</p>
-         </div>
-        
-    </div>
-
-    <div class= "textPic">
-        <div class="text1">
-            <p>Describe the project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus purus ac sem dapibus commodo. Phasellus a diam lobortis, vestibulum arcu aliquet, molestie leo. Quisque sem lectus, tristique sed condimentum sit amet, consequat sed leo. Curabitur elit velit, dictum ut ullamcorper vitae, sodales at libero. Nam faucibus, lectus quis hendrerit sagittis, diam nunc sodales lacus, vel hendrerit arcu turpis ut neque. Fusce tellus nulla, vestibulum quis volutpat euismod, semper sit amet orci. Vestibulum interdum eros sit amet sapien tincidunt luctus.</p>
         </div>
-        <img class="rightPic" src="project img.jpeg">
+            
     </div>
+
+    <div class="textPic">
+        <div class="imgLeft">
+            <div class="picture" id="pictureid6">
+            <img class="picture1" src="pics/argus.png">
+            <img class="picture1" src="pics/hackcmu.png">
+            </div>
+
+        </div>
+        <div class="textLeft">
+            <div class="textCover6" id="hoverid6">
+                <div class="title" style="color:#20b232">
+                        
+                    Argus (Hackathon Project)
+                    <br> September 2018
+                       
+                </div>
+                <div class="text" style="font-size: 1.52vw; background-color: #fd40753b;">
+                    <p>&emsp;<a href="https://devpost.com/software/argus">Argus</a> was the first hackathon project I ever did, at the very beginning of freshman year. Admittedly I did not know anything about machine learning at the time, but two of my teammates wanted to use TensorFlow to train a model and we wanted our project to fall on the side of social good. So we settled on Argus, an ios app that helps the vision impaired safely cross walkways by telling them outloud whether it is safe to cross. We trained a model that detects whether the crosswalk sign is 'stop' with a red hand, or 'go' with a white walking person. As seen in the demo, it ended up being fairly accurate. Though I did not personally contribute a lot of code to this project, I did learn a lot of things from my teammates on an area I had no knowledge about. The process of seeing the model being trained and how it behaved based on our test data gave me first hand experience I can draw upon and connect to when I run into topics in the realm of machine learning. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+   
 </div>
     
     <!-- Please ignore the obnoxious amounts of functions below, first time using js -->
     <script>
         document.getElementById("hoverid1").onmouseover = function(){
             document.getElementById("hoverid1").style.transform="translate3d(0px, -100%, 0px)";
-            document.getElementById("pictureid1").style.transform="translate3d(0px, -100%, 0px)";
+            document.getElementById("pictureid1").style.transform="translate3d(0px, 0px, 0px)";
         }
 
         document.getElementById("hoverid1").onmouseout = function(){
             document.getElementById("hoverid1").style.transform="translate3d(0px, 0px, 0px)";
-            document.getElementById("pictureid1").style.transform="translate3d(0px, 0px, 0px)";
+            document.getElementById("pictureid1").style.transform="translate3d(0px, -100%, 0px)";
         }
 
         document.getElementById("pictureid1").onmouseover = function(){
             document.getElementById("hoverid1").style.transform="translate3d(0px, -100%, 0px)";
-            document.getElementById("pictureid1").style.transform="translate3d(0px, -100%, 0px)";
+            document.getElementById("pictureid1").style.transform="translate3d(0px, 0px, 0px)";
         }
 
         document.getElementById("pictureid1").onmouseout = function(){
             document.getElementById("hoverid1").style.transform="translate3d(0px, 0px, 0px)";
-            document.getElementById("pictureid1").style.transform="translate3d(0px, 0px, 0px)";
+            document.getElementById("pictureid1").style.transform="translate3d(0px, -100%, 0px)";
         }
+
+        document.getElementById("hoverid2").onmouseover = function(){
+            document.getElementById("hoverid2").style.transform="translate3d(0px, -100%, 0px)";
+            document.getElementById("pictureid2").style.transform="translate3d(0px, 0px, 0px)";
+        }
+
+        document.getElementById("hoverid2").onmouseout = function(){
+            document.getElementById("hoverid2").style.transform="translate3d(0px, 0px, 0px)";
+            document.getElementById("pictureid2").style.transform="translate3d(0px, -100%, 0px)";
+        }
+
+        document.getElementById("pictureid2").onmouseover = function(){
+            document.getElementById("hoverid2").style.transform="translate3d(0px, -100%, 0px)";
+            document.getElementById("pictureid2").style.transform="translate3d(0px, 0px, 0px)";
+        }
+
+        document.getElementById("pictureid2").onmouseout = function(){
+            document.getElementById("hoverid2").style.transform="translate3d(0px, 0px, 0px)";
+            document.getElementById("pictureid2").style.transform="translate3d(0px, -100%, 0px)";
+        }
+
+        document.getElementById("hoverid3").onmouseover = function(){
+            document.getElementById("hoverid3").style.transform="translate3d(0px, -101%, 0px)";
+            document.getElementById("pictureid3").style.transform="translate3d(0px, 0px, 0px)";
+        }
+
+        document.getElementById("hoverid3").onmouseout = function(){
+            document.getElementById("hoverid3").style.transform="translate3d(0px, 0px, 0px)";
+            document.getElementById("pictureid3").style.transform="translate3d(0px, -100%, 0px)";
+        }
+
+        document.getElementById("pictureid3").onmouseover = function(){
+            document.getElementById("hoverid3").style.transform="translate3d(0px, -101%, 0px)";
+            document.getElementById("pictureid3").style.transform="translate3d(0px, 0px, 0px)";
+        }
+
+        document.getElementById("pictureid3").onmouseout = function(){
+            document.getElementById("hoverid3").style.transform="translate3d(0px, 0px, 0px)";
+            document.getElementById("pictureid3").style.transform="translate3d(0px, -100%, 0px)";
+        }
+        document.getElementById("hoverid4").onmouseover = function(){
+            document.getElementById("hoverid4").style.transform="translate3d(0px, -100%, 0px)";
+            document.getElementById("pictureid4").style.transform="translate3d(0px, 0px, 0px)";
+        }
+
+        document.getElementById("hoverid4").onmouseout = function(){
+            document.getElementById("hoverid4").style.transform="translate3d(0px, 0px, 0px)";
+            document.getElementById("pictureid4").style.transform="translate3d(0px, -100%, 0px)";
+        }
+
+        document.getElementById("pictureid4").onmouseover = function(){
+            document.getElementById("hoverid4").style.transform="translate3d(0px, -100%, 0px)";
+            document.getElementById("pictureid4").style.transform="translate3d(0px, 0px, 0px)";
+        }
+
+        document.getElementById("pictureid4").onmouseout = function(){
+            document.getElementById("hoverid4").style.transform="translate3d(0px, 0px, 0px)";
+            document.getElementById("pictureid4").style.transform="translate3d(0px, -100%, 0px)";
+        }
+        
+        document.getElementById("hoverid5").onmouseover = function(){
+            document.getElementById("hoverid5").style.transform="translate3d(0px, -100%, 0px)";
+            document.getElementById("pictureid5").style.transform="translate3d(0px, 0px, 0px)";
+        }
+
+        document.getElementById("hoverid5").onmouseout = function(){
+            document.getElementById("hoverid5").style.transform="translate3d(0px, 0px, 0px)";
+            document.getElementById("pictureid5").style.transform="translate3d(0px, -100%, 0px)";
+        }
+
+        document.getElementById("pictureid5").onmouseover = function(){
+            document.getElementById("hoverid5").style.transform="translate3d(0px, -100%, 0px)";
+            document.getElementById("pictureid5").style.transform="translate3d(0px, 0px, 0px)";
+        }
+
+        document.getElementById("pictureid5").onmouseout = function(){
+            document.getElementById("hoverid5").style.transform="translate3d(0px, 0px, 0px)";
+            document.getElementById("pictureid5").style.transform="translate3d(0px, -100%, 0px)";
+        }
+
+        document.getElementById("hoverid6").onmouseover = function(){
+            document.getElementById("hoverid6").style.transform="translate3d(0px, -100%, 0px)";
+            document.getElementById("pictureid6").style.transform="translate3d(0px, 0px, 0px)";
+        }
+
+        document.getElementById("hoverid6").onmouseout = function(){
+            document.getElementById("hoverid6").style.transform="translate3d(0px, 0px, 0px)";
+            document.getElementById("pictureid6").style.transform="translate3d(0px, -100%, 0px)";
+        }
+
+        document.getElementById("pictureid6").onmouseover = function(){
+            document.getElementById("hoverid6").style.transform="translate3d(0px, -100%, 0px)";
+            document.getElementById("pictureid6").style.transform="translate3d(0px, 0px, 0px)";
+        }
+
+        document.getElementById("pictureid6").onmouseout = function(){
+            document.getElementById("hoverid6").style.transform="translate3d(0px, 0px, 0px)";
+            document.getElementById("pictureid6").style.transform="translate3d(0px, -100%, 0px)";
+        }
+        
     </script>
    
 
