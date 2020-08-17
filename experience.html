@@ -112,10 +112,32 @@
             color: #00ffff;
         }
 
+        .text-child {
+            width: 70%;
+            height: 10%;
+            float: left;
+            
+        }  
+        .img-child{
+            width: 30%;
+            float: right;
+            height: 50%;
+            overflow: hidden;
+            border: 3px solid blue;
+
+        }
+        .picture1{
+            margin-top: -4px;
+            width: 100%;
+            height: 101%;
+            /*border: 3px solid red;*/
+        }
+
         .textPic{
             float: left;
             margin-top: 2%;
-            display: flex;     
+            display: flex;
+            border: 3px solid purple;
 
         }
 
@@ -124,10 +146,21 @@
             text-align: right;
             position: relative;
             width: 40%;
-            
+        }
+
+        .picture{
+            width: 100%;
+            height: 19.75vw;
+            transform: translate3d(0px, 0px, 0px);
+            transition: transform .5s ease-in-out;
+            float: left;
+            /*border: 3px solid orange;*/
 
         }
 
+        .picture:hover{
+            transform: translate3d(0px, -100%, 0px);
+        }
         .leftPic {
             z-index: 99;
             text-align: left;
@@ -136,59 +169,40 @@
             
 
         }
-        .container {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            border: 3px solid green;
-
+        .textCover1:hover{
+            transform: translate3d(0px, -100%, 0px);
         }
 
         /*for the fade in effect on the text over the pictures*/
 
-        .overlay {
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          height: 100%;
-          width: 100%;
-          opacity: 0;
-          transition: 0.8s ease;
-          margin-left: 5%;
-        
-        }
-        .container:hover .overlay {
-          opacity: 1;
-          
+        .slide {
+            float: top;
+            margin: 0;
+            padding: 0;
         }
 
-        .textCover{
-            position: absolute;
-            top: 0; left: 0;
-            height: 50%;
-            width: 100%;
-            color: grey;
+
+        .textCover1{
+            height: 19.25vw;
+            transform: translate3d(0px, 0px, 0px);
+            transition: transform .5s ease-in-out;
+        }
+
+        .title1{
+            color: black;
             text-align: center;
-            top: 50%;
-            transform: translateY(-25%);
-            font-size: 4vw;
-            border: 3px solid red;
-
+            font-size: 3vw;
+            padding-top: 9%;
+            padding-bottom: 8%;
         }
-
 
         .text1 {
-            position: relative;
-
-            width: 70%;
-            color: grey;
-            padding-right: 2%;
+            height: 100%;
+            color: black;
             text-align: left;
-            padding-top: 2%;
-            padding-left: 1%;
             border: 3px solid orange;
+            font-size: 1.2vw;
+            
         }
 
         .text2 {
@@ -243,17 +257,31 @@
           <div class="lines gradient"/>
           </div>
     <div class="textPic">
-
-        <div class="text1">
-            <p><a href="https://www.auditiontech.com/">Audition Technology</a> is a start up focused on hearing health devices and applications. I worked as an Android App Development Intern for their app focused on keeping users informed about how much sound they are exposed to daily, so they can be aware of their potential risks for hearing loss. 
-            <br><br>I implemented the audio streaming exposure feature, where the user can get an estimated volume of the media they are currently streaming if they are using earbuds, headphones, etc. Also, I worked to improve an already established ambient exposure feature, where the app uses the phone microphone to measure the volume of the user's environment. Specifically I added the ability for the user to take a 5 second measurement of their ambient noise, then use a slider to input how many hours they will be in the current location, so the app can have estimates of their daily exposure without them having to keep the app running 24/7 and draining their battery. Along with the manual measurment, I added the automatic measurement feature, where the user can have the app run indefinately in the background and it will automatically take a 5 second sample every hour, so the user does not have to remember to manually tell the app to take an ambient exposure sample. Lastly, the app also has an exposure graph displaying the user's daily cumulative exposure in a line graph. I worked on adding a gradient fill to the exposure graph with the lower parts starting at a green color, then depening on the how close the user is close to hitting their daily recommended sound exposure threshold, the graph will turn yellow, and eventually red.</p>
-
-            <div class="textCover">
+        <div class="text-child">
+            <div class="textCover1" id="hover1id">
+            <div class="title1">
+                    
                 Android App Development Intern 
                 <br> Summer 2020
+                   
             </div>
+            <div class="text1">
+             
+            <p>&emsp;<a href="https://www.auditiontech.com/"> Audition Technology</a> is a start up focused on hearing health devices and applications. I worked as an Android App Development Intern for their app focused on keeping users informed about how much sound they are exposed to daily, so they can be aware of their potential risks for hearing loss. 
+            <br><br> &emsp; I implemented the audio streaming exposure feature, where the user can get an estimated volume of the media they are currently streaming if they are using earbuds, headphones, etc. Also, I worked to improve an already established ambient exposure feature, where the app uses the phone microphone to measure the volume of the user's environment. Specifically I added the ability for the user to take a 5 second measurement of their ambient noise, then use a slider to input how many hours they will be in the current location, so the app can have estimates of their daily exposure without them having to keep the app running 24/7 and draining their battery. Along with the manual measurment, I added the automatic measurement feature, where the user can have the app run indefinately in the background and it will automatically take a 5 second sample every hour, so the user does not have to remember to manually tell the app to take an ambient exposure sample. Lastly, the app also has an exposure graph displaying the user's daily cumulative exposure in a line graph. I worked on adding a gradient fill to the exposure graph with the lower parts starting at a green color, then depening on the how close the user is close to hitting their daily recommended sound exposure threshold, the graph will turn yellow, and eventually red.</p>
+            </div>
+
         </div>
-        <img class="rightPic" src="audition technology.png">
+        </div>
+        <div class="img-child">
+            <div class="picture" id="pictureid1">
+            <img class="picture1" src="audition-tech.png">
+            <img class="picture1" src="android.png">
+            </div>
+
+        </div>
+            
+        </div>
     </div>
 
     <div class= "textPic">
@@ -286,7 +314,28 @@
         <img class="rightPic" src="project img.jpeg">
     </div>
 </div>
+    
+    <script>
+        document.getElementById("hover1id").onmouseover = function(){
+            document.getElementById("hover1id").style.transform="translate3d(0px, -100%, 0px)";
+            document.getElementById("pictureid1").style.transform="translate3d(0px, -100%, 0px)";
+        }
 
+        document.getElementById("hover1id").onmouseout = function(){
+            document.getElementById("hover1id").style.transform="translate3d(0px, 0px, 0px)";
+            document.getElementById("pictureid1").style.transform="translate3d(0px, 0px, 0px)";
+        }
+
+        document.getElementById("pictureid1").onmouseover = function(){
+            document.getElementById("hover1id").style.transform="translate3d(0px, -100%, 0px)";
+            document.getElementById("pictureid1").style.transform="translate3d(0px, -100%, 0px)";
+        }
+
+        document.getElementById("pictureid1").onmouseout = function(){
+            document.getElementById("hover1id").style.transform="translate3d(0px, 0px, 0px)";
+            document.getElementById("pictureid1").style.transform="translate3d(0px, 0px, 0px)";
+        }
+    </script>
    
 
 
