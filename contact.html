@@ -8,6 +8,13 @@
     <link rel="stylesheet" type="text/css" href="./Starter_files/style.css">  <!-- Insert StyleSheet -->
     <link rel="icon" href="https://cardadfar.github.io/stuco_webdev_website/assets/files/cool-icon.png">                    <!-- Insert Icon -->
     <script src="./Starter_files/jquery.min.js"></script>
+      <meta charset="utf-8">
+
+      <link rel="stylesheet" href="style.css">
+
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
 </head>
 
 <body style="background-image: url('honeycomb.png');">
@@ -160,7 +167,7 @@
 
         .row{
             float: left;
-            columns: 150px 4;
+            columns: 10vw 5;
             margin-top: 1.5%;
             margin-bottom:1%;
             border: 3px solid red;
@@ -169,10 +176,64 @@
         .column {
             position:relative;
             width: 100%;
-            height: 100%;
+            height: 25vw;
             border: 3px solid orange;
             float: left;
+            justify-content: center;
+            display: inline-flex;
         }
+
+        .column::before{
+            content:'';
+            background: blue;
+            width:300px;
+            height:300px;
+            position:absolute;
+            top:0;
+            left:0;
+            opacity:0.3;
+        }
+
+        
+
+            .social-buttons a{
+              display: inline-flex;
+              text-decoration: none;
+              font-size: 18px;
+              width: 60px;
+              height: 60px;
+              color: #fff;
+              justify-content: center;
+              align-items: center;
+              position: relative;
+              margin: 0 8px;
+            }
+
+            .social-buttons a::after{
+              content: "";
+              position: absolute;
+              width: 60px;
+              height: 60px;
+              background: linear-gradient(45deg,#22a6b3,#30336b);
+              border-radius: 50%;
+              z-index: -1;
+              transition: 0.3s ease-in;
+            }
+
+            .social-buttons a:hover::after{
+              transform: scale(0);
+            }
+
+            .social-buttons a i{
+              transition: 0.3s ease-in;
+            }
+
+            .social-buttons a:hover i{
+              background: linear-gradient(45deg,#22a6b3,#30336b);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              transform: scale(2.2);
+            }
 
 
     </style>
@@ -182,10 +243,10 @@
           </div>
 
             <div class="topnav">
-              <a class="cntActive" href="https://natalie-hong.github.io/pers_web/contact">Contact</a>
-              <a class="expColor"href="https://natalie-hong.github.io/pers_web/experience">Experience</a>
-              <a class="abtColor"href="https://natalie-hong.github.io/pers_web/about">About</a>
-              <a class="hmColor" href="https://natalie-hong.github.io/pers_web/">Home</a>
+              <a class="cntActive" href="https://natalie-hong.github.io/website/contact">Contact</a>
+              <a class="expColor"href="https://natalie-hong.github.io/website/experience">Experience</a>
+              <a class="abtColor"href="https://natalie-hong.github.io/website/about">About</a>
+              <a class="hmColor" href="https://natalie-hong.github.io/website/">Home</a>
             </div>
 
           <div class="lines gradient"/>
@@ -200,34 +261,53 @@
         </div>
     
 
-            <div class="row">
-                <div class="column" style="background-color:black">
-                    <a href="https://www.facebook.com/natalie.hong.Y.Y">
-                        <img class="social" src="pics/facebook.png">
-                    </a>
-                    hi
-                </div>
-                <div class="column" style="background-color:blue">
-                     <a href="https://www.instagram.com/natalie_hong_o.o/">
-                        <img class="social" src="pics/instagram.png">
-                    </a>
-                    bye
-                </div>  
-                <div class="column" style="background-color:grey">
-                    <a href="https://www.linkedin.com/in/natalie-hong-346332149/">
-                        <img class="social" src="pics/linkedIn.png">
-                    </a>
-                    try
-                </div>
-                <div class="column" style="background-color:red">
-                    <a href="https://www.linkedin.com/in/natalie-hong-346332149/">
-                        <img class="social" src="pics/linkedIn.png">
-                    </a>
-                    try
+        <div class="row" >
+            <div class="column">
+                <div class="social-buttons" >
+                  
+                  <a href="https://www.facebook.com/natalie.hong.Y.Y"><i class="fab fa-facebook"></i></a>
                 </div>
             </div>
 
+            <div class="column">
+                <div class="social-buttons" >
+                  <a href="https://twitter.com/NatalieHongO_o"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="social-buttons" >
+                  <a href="https://www.instagram.com/natalie_hong_o.o/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="social-buttons" >
+                  
+                 
+                  <a href="https://www.linkedin.com/in/natalie-hong-346332149/"><i class="fab fa-linkedin-in"></i></a>
+                  
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="social-buttons" >
+                  
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+                
+
+
+        
    </div>
+
+
+
+
+       
+
 
 
     <script type="text/javascript" src="./Starter_files/interactions.js"></script>    <!-- Insert JQuery Script -->
